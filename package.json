@@ -1,0 +1,16 @@
+{
+	"name": "oef_formulier",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass main.scss main.css",
+		"watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+	},
+	"author": "Christian",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^6.0.0",
+		"nodemon": "^2.0.7"
+	}
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <title>The big short animal quiz</title>
+</head>
+<body>
+    <header class="header">
+        <H1 class="header__title">The big short animal quiz</H1>
+    </header>
+    <main class="quiz">
+        
+        <section class="quiz-intro">
+        <img src="img/magda-v-4-AAA9FRv1w-unsplash.jpg" alt="hert in het hoge gras van de velden - fotografie van Magda V op unsplash.com" class="quiz-intro__img">
+        </section>
+        
+        <form action="/action_page_url" method="post" class="quiz-form" id="animal-quiz-form">
+            <div class="quiz-question-list">
+            <h2 class="quiz-question-list__title">De vragen</h2>
+            <fieldset class="quiz-question-list__question">
+                <legend class="quiz-question-list__question-text">Welke (engelstalige) namen worden gebruikt om een groep van dieren te beschrijven?</legend>
+                
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="murder" name="murder">
+                    <label for="murder">a murder</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="mob" name="mob">
+                    <label for="mob">a mob</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="shiver" name="shiver">
+                    <label for="shiver">a shiver</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="gang" name="gang">
+                    <label for="gang">a gang</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="conspiracy" name="conspiracy">
+                    <label for="conspiracy">a conspiracy</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="destruction" name="destruction">
+                    <label for="destruction">a destruction</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="convocation" name="convocation">
+                    <label for="convocation">a convocation</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="business" name="business">
+                    <label for="business">a business</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="fraternity" name="fraternity">
+                    <label for="fraternity">a fraternity</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="brotherhood" name="brotherhood">
+                    <label for="brotherhood">a brotherhood</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="tribe" name="tribe">
+                    <label for="tribe">a tribe</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="club" name="club">
+                    <label for="club">a club</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="cast" name="cast">
+                    <label for="cast">a cast</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="checkbox" id="host" name="host">
+                    <label for="host">a host</label>
+                </div>    
+
+                </fieldset>
+
+                <fieldset class="quiz-question-list__question">
+                <legend class="quiz-question-list__question-text">Het vogelbekdier legt eieren, heeft een snavel, en leeft in het water. <br> Maar hoe wordt het geclassificeers? Als een ... </legend>
+                
+                <div class="quiz-question-list__answers">
+                    <input type="radio" id="vis" name="vis">
+                    <label for="vis">vis</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="radio" id="vogel" name="vogel">
+                    <label for="vogel">vogel</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="radio" id="zoogdier" name="zoogdier">
+                    <label for="zoogdier">zoogdier</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="radio" id="amfibie" name="amfibie">
+                    <label for="amfibie">amfibie</label>
+                </div>
+
+                <div class="quiz-question-list__answers">
+                    <input type="radio" id="reptiel" name="reptiel">
+                    <label for="reptiel">reptiel</label>
+                </div>
+
+                
+                </fieldset>
+                
+                <fieldset class="quiz-question-list__question quiz-question-list__cat-question">
+                <legend class="quiz-question-list__question-text">Katten die spinnen brullen niet, en katten die brullen spinnen niet. <br> Welke van deze katten spint als een huiskat? </legend>
+                
+                <div class="quiz-question-list__answers">
+                    <select name="cats" id="cats" class="quiz-question-list__cats">
+                        <option value="">-- kies --</option>
+                        <option value="tijger">tijger</option>
+                        <option value="leeuw">leeuw</option>
+                        <option value="poema">poema</option>
+                        <option value="jaguar">jaguar</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quiz-user">
+                <h2 class="quiz-user__title">Over jou</h2>
+                <div class="quiz-user__all-inputs">
+                                        
+                        <label for="name" class="quiz-user__label quiz-user__required">voornaam</label>
+                        <input type="text" name="name" class="quiz-user__inputfield" required>
+                
+                    
+                        <label for="email" class="quiz-user__label quiz-user__required">email</label>
+                        <input type="email" name="email" class="quiz-user__inputfield" required>
+                    
+                        <label for="lastname" class="quiz-user__label quiz-user__required">achternaam</label>
+                        <input type="txt" name="lastname" class="quiz-user__inputfield" required>
+                    
+                    
+                        <label for="gsm" class="quiz-user__label quiz-user__required">GSM</label>
+                        <input type="number" name="gsm" class="quiz-user__inputfield" required>
+                    
+                        <div class=quiz-user__animal-story>
+                        <label for="animal-input" class="quiz-user__label">Heb jij dieren? Vertel het ons!</label>
+
+                        <textarea name="animal-input" id="animal-input" class="quiz-user__inputfield quiz-user__inputfield--textarea"></textarea>    
+                        </div>
+                </div>
+                
+            </div>
+            
+        </form>
+        <div class="quiz-send">
+            <p class="quiz-send__thankyou">Dank je om deel te nemen!</p>
+            <button type="submit" form="animal-quiz-form" value="submit" class="quiz-send__btn" >Verzend mijn antwoorden</button>
+        </div>
+    </main>
+  
+</body>
+</html>
