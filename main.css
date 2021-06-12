@@ -108,10 +108,12 @@ main {
     border: 1px solid var(--color-darkyellow);
     border-radius: 5px;
     padding: 0 1em;
-    margin: .5em .5em 1.5em 0; }
+    margin: .5em 0 1.5em; }
   .quiz-user__inputfield--textarea {
     min-height: 127px;
-    margin: none; }
+    font-family: 'Roboto', sans-serif;
+    margin: none;
+    padding: 3px; }
 
 .quiz-send {
   padding: 2em;
