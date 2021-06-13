@@ -121,6 +121,7 @@ main {
     }
 
     &__all-inputs {
+        /* choice for flex - with 'wrap' -, but grid was also a possibility */
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -151,7 +152,6 @@ main {
     &__inputfield--textarea {
         min-height: 127px;
         font-family: 'Roboto', sans-serif;
-        margin: none;
         padding: 3px;
     }
 }
@@ -175,3 +175,5 @@ main {
         border-radius: 5px;
     }
 }
+
+/* no errors on https://jigsaw.w3.org/css-validator/validator, but warnings for the variables defined at the ":root" */ 
