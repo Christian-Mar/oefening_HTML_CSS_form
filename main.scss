@@ -27,9 +27,7 @@ body {
   max-width: var(--max-width);
   margin: auto;
   font-family: 'Roboto', sans-serif;
-  
-  background-color: var(--color-whitegrey);
-  
+  background-color: var(--color-whitegrey); 
 }
 
 header {
@@ -89,23 +87,29 @@ main {
     }
 
     &__question-text {
-        line-height: 1.25em;
+        line-height: 1.4em;
+        font-size: 1.25em;
         font-weight: bold;
-        margin-left: 10px;
-        padding: 1em;
+        margin-left: .5em;
+        padding: .5em;
+        color: var(--color-blue); 
     }
 
     &__answers {
         line-height: 1em;
-        padding: 0.25em 2em;
+        padding: .25em 2em;
     }
 
     &__cat-question {
-        border: none; 
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: 2em 0;
     }
 
     &__cats {
         width: 100%;
+        margin: 0 1em 1em 1em;
     }
 }
 
@@ -121,17 +125,26 @@ main {
     }
 
     &__all-inputs {
-        /* choice for flex - with 'wrap' -, but grid was also a possibility */
+        display: flex;  
+    }
+
+    &__input {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        height: 170px;
+        margin-right: 1em;
+    }
+
+    &__required-names {
+        display: flex;
+    }
+
+    &__required-contactpossibilities {
+        display:flex;
     }
 
     &__required:after {
         content: " *";
-        color: var(--color-maroon);
-        
+        color: var(--color-maroon); 
     }
     
     &__animal-story {
@@ -142,7 +155,7 @@ main {
 
     &__inputfield {
         width: 250px;
-        height: 42px;
+        height: 44px;
         border: 1px solid var(--color-darkyellow);
         border-radius: 5px;
         padding: 0 1em;
@@ -150,7 +163,7 @@ main {
     }    
 
     &__inputfield--textarea {
-        min-height: 127px;
+        min-height: 129px;
         font-family: 'Roboto', sans-serif;
         padding: 3px;
     }
@@ -173,7 +186,8 @@ main {
         font-weight: bold;
         padding: 0 1em;
         border-radius: 5px;
+        border: none;
     }
 }
 
-/* no errors on https://jigsaw.w3.org/css-validator/validator, but warnings for the variables defined at the ":root" */ 
+/* no errors on https://jigsaw.w3.org/css-validator, but warnings for the variables defined at the ":root" */ 

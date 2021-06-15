@@ -71,17 +71,23 @@ main {
     padding-bottom: 2em;
     margin: 2em 0; }
   .quiz-question-list__question-text {
-    line-height: 1.25em;
+    line-height: 1.4em;
+    font-size: 1.25em;
     font-weight: bold;
-    margin-left: 10px;
-    padding: 1em; }
+    margin-left: .5em;
+    padding: .5em;
+    color: var(--color-blue); }
   .quiz-question-list__answers {
     line-height: 1em;
-    padding: 0.25em 2em; }
+    padding: .25em 2em; }
   .quiz-question-list__cat-question {
-    border: none; }
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0; }
   .quiz-question-list__cats {
-    width: 100%; }
+    width: 100%;
+    margin: 0 1em 1em 1em; }
 
 .quiz-user {
   background-color: var(--color-lightyellow);
@@ -91,11 +97,15 @@ main {
     text-align: center;
     padding-bottom: 2em; }
   .quiz-user__all-inputs {
-    /* choice for flex - with 'wrap' -, but grid was also a possibility */
+    display: flex; }
+  .quiz-user__input {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 170px; }
+    margin-right: 1em; }
+  .quiz-user__required-names {
+    display: flex; }
+  .quiz-user__required-contactpossibilities {
+    display: flex; }
   .quiz-user__required:after {
     content: " *";
     color: var(--color-maroon); }
@@ -105,13 +115,13 @@ main {
     margin-left: auto; }
   .quiz-user__inputfield {
     width: 250px;
-    height: 42px;
+    height: 44px;
     border: 1px solid var(--color-darkyellow);
     border-radius: 5px;
     padding: 0 1em;
     margin: .5em 0 1.5em; }
   .quiz-user__inputfield--textarea {
-    min-height: 127px;
+    min-height: 129px;
     font-family: 'Roboto', sans-serif;
     padding: 3px; }
 
@@ -128,6 +138,7 @@ main {
     color: var(--color-white);
     font-weight: bold;
     padding: 0 1em;
-    border-radius: 5px; }
+    border-radius: 5px;
+    border: none; }
 
-/* no errors on https://jigsaw.w3.org/css-validator/validator, but warnings for the variables defined at the ":root" */
+/* no errors on https://jigsaw.w3.org/css-validator, but warnings for the variables defined at the ":root" */

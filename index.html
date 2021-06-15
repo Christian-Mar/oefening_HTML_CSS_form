@@ -21,7 +21,6 @@
         </figure>
         
         <form action="/action_page_url" method="post" class="quiz-form" id="animal-quiz-form">
-            <!-- Because of the one button down the form, decided to make one form instead of multiple forms in different sections -->
             <div class="quiz-question-list">
                 <h2 class="quiz-question-list__title">De vragen</h2>
                 <fieldset class="quiz-question-list__question">
@@ -96,84 +95,91 @@
                         <input type="checkbox" id="host" name="host">
                         <label for="host">a host</label>
                     </div>    
+                </fieldset>
 
-                    </fieldset>
-
-                    <fieldset class="quiz-question-list__question">
-                        <legend class="quiz-question-list__question-text">Het vogelbekdier legt eieren, heeft een snavel, en leeft in het water. <br> Maar hoe wordt het geclassificeerd? Als een ... </legend>
+                <fieldset class="quiz-question-list__question">
+                    <legend class="quiz-question-list__question-text">Het vogelbekdier legt eieren, heeft een snavel, en leeft in het water. <br> Maar hoe wordt het geclassificeerd? Als een ... </legend>
                 
-                        <div class="quiz-question-list__answers">
-                            <input type="radio" id="vis" name="vogelbekdier">
-                            <label for="vis">vis</label>
+                    <div class="quiz-question-list__answers">
+                        <input type="radio" id="vis" name="vogelbekdier">
+                        <label for="vis">vis</label>
+                    </div>
+
+                    <div class="quiz-question-list__answers">
+                        <input type="radio" id="vogel" name="vogelbekdier">
+                        <label for="vogel">vogel</label>
+                    </div>
+
+                    <div class="quiz-question-list__answers">
+                        <input type="radio" id="zoogdier" name="vogelbekdier">
+                        <label for="zoogdier">zoogdier</label>
+                    </div>
+
+                    <div class="quiz-question-list__answers">
+                        <input type="radio" id="amfibie" name="vogelbekdier">
+                        <label for="amfibie">amfibie</label>
+                    </div>
+
+                    <div class="quiz-question-list__answers">
+                        <input type="radio" id="reptiel" name="vogelbekdier">
+                        <label for="reptiel">reptiel</label>
+                    </div>
+
+                </fieldset>
+                
+                <div class="quiz-question-list__question quiz-question-list__cat-question">
+                    <label for="cats" class="quiz-question-list__question-text">Katten die spinnen brullen niet, en katten die brullen spinnen niet.<br>Welke van deze katten spint als een huiskat? </label>
+                
+                    <div class="quiz-question-list__answers">
+                        <select name="cats" id="cats" class="quiz-question-list__cats">
+                            <option value="">-- kies --</option>
+                            <option value="tijger">tijger</option>
+                            <option value="leeuw">leeuw</option>
+                            <option value="poema">poema</option>
+                            <option value="jaguar">jaguar</option>
+                        </select>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="quiz-user">
+                <h2 class="quiz-user__title">Over jou</h2>
+                <div class=quiz-user__all-inputs>
+                    <div class="quiz-user__all-required-inputs">
+                        <div class=quiz-user__required-names>  
+                            <div class="quiz-user__input">              
+                                <label for="name" class="quiz-user__label quiz-user__required">voornaam</label>
+                                <input type="text" name="name" id="name" class="quiz-user__inputfield" required>
                             </div>
-
-                        <div class="quiz-question-list__answers">
-                            <input type="radio" id="vogel" name="vogelbekdier">
-                            <label for="vogel">vogel</label>
+                                
+                            <div class="quiz-user__input">  
+                                <label for="lastname" class="quiz-user__label quiz-user__required">achternaam</label>
+                                <input type="text" name="lastname" id="lastname" class="quiz-user__inputfield" required>
+                            </div> 
                         </div>
-
-                        <div class="quiz-question-list__answers">
-                            <input type="radio" id="zoogdier" name="vogelbekdier">
-                            <label for="zoogdier">zoogdier</label>
-                        </div>
-
-                        <div class="quiz-question-list__answers">
-                            <input type="radio" id="amfibie" name="vogelbekdier">
-                            <label for="amfibie">amfibie</label>
-                        </div>
-
-                        <div class="quiz-question-list__answers">
-                            <input type="radio" id="reptiel" name="vogelbekdier">
-                            <label for="reptiel">reptiel</label>
-                        </div>
-
-                    </fieldset>
-                
-                    <fieldset class="quiz-question-list__question quiz-question-list__cat-question">
-                        <legend class="quiz-question-list__question-text">Katten die spinnen brullen niet, en katten die brullen spinnen niet. <br> Welke van deze katten spint als een huiskat? </legend>
-                
-                        <div class="quiz-question-list__answers">
-                            <select name="cats" id="cats" class="quiz-question-list__cats">
-                                <option value="">-- kies --</option>
-                                <option value="tijger">tijger</option>
-                                <option value="leeuw">leeuw</option>
-                                <option value="poema">poema</option>
-                                <option value="jaguar">jaguar</option>
-                            </select>
-                        </div>
-                    </fieldset>    
-                </div>
-                <div class="quiz-user">
-                    <h2 class="quiz-user__title">Over jou</h2>
-                    <div class="quiz-user__all-inputs">
-                                        
-                        <label for="name" class="quiz-user__label quiz-user__required">voornaam</label>
-                        <input type="text" name="name" id="name" class="quiz-user__inputfield" required>
-                
+                        <div class=quiz-user__required-contactpossibilities>
+                            <div class="quiz-user__input">
+                                <label for="email" class="quiz-user__label quiz-user__required">email</label>
+                                <input type="email" name="email" id="email" class="quiz-user__inputfield" required>   
+                            </div>                                                     
                     
-                        <label for="email" class="quiz-user__label quiz-user__required">email</label>
-                        <input type="email" name="email" id="email" class="quiz-user__inputfield" required>
-                    
-                        <label for="lastname" class="quiz-user__label quiz-user__required">achternaam</label>
-                        <input type="text" name="lastname" id="lastname" class="quiz-user__inputfield" required>
-                    
-                    
-                        <label for="gsm" class="quiz-user__label quiz-user__required">GSM</label>
-                        <input type="number" name="gsm" id="gsm" class="quiz-user__inputfield" required>
-                    
-                        <div class=quiz-user__animal-story>
-                            <label for="animal-input" class="quiz-user__label">Heb jij dieren? Vertel het ons!</label>
-                            <textarea name="animal-input" id="animal-input" class="quiz-user__inputfield quiz-user__inputfield--textarea"></textarea>    
+                            <div class="quiz-user__input">
+                                <label for="gsm" class="quiz-user__label quiz-user__required">GSM</label>
+                                <input type="number" name="gsm" id="gsm" class="quiz-user__inputfield" required>
+                            </div>
                         </div>
                     </div>
-                
+                    <div class=quiz-user__animal-story>
+                        <label for="animal-input" class="quiz-user__label">Heb jij dieren? Vertel het ons!</label>
+                        <textarea name="animal-input" id="animal-input" class="quiz-user__inputfield quiz-user__inputfield--textarea"></textarea>    
+                    </div>
                 </div>
+            </div>
                     
-                <div class="quiz-send">
-                    <p class="quiz-send__thankyou">Dank je om deel te nemen!</p>
-                    <button type="submit"  value="submit" class="quiz-send__btn" >Verzend mijn antwoorden</button>
-                    <!-- button works also outside the form with a reference to the id of the form -> form="animal-quiz-form"-->
-                </div>
+            <div class="quiz-send">
+                <p class="quiz-send__thankyou">Dank je om deel te nemen!</p>
+                <button type="submit"  value="submit" class="quiz-send__btn" >Verzend mijn antwoorden</button>                                      
+            </div>
         </form>
     </main>
 </body>
